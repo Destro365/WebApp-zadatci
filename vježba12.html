@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<body>
+
+
+    <form action="adduser.php" method="post">
+
+        <label for="fname">Ime *</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Vaše ime..." required><br><br>
+
+        <label for="lname">Prezime *</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Vaše prezime..." required><br><br>
+
+        <label for="country">Država:</label><br>
+        <select id="country" name="country">
+            <option value="">Molimo odaberite</option>
+            <option value="BE">>Belgium</option>
+            <option value="HR" selected>Hrvatska</option>
+            <option value="LU">Luxembourg</option>
+            <option value="HU">Hungary</option>
+        </select><br><br>
+
+        <label for="note">Napomena:</label><br>
+        <textarea name="note" id="note" rows="5" cols="30" placeholder="Unesite tekst ovdje..."></textarea><br><br>
+
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+
+    </form>
+
+</body>
